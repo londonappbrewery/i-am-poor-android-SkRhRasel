@@ -4,27 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#70416d"
+    android:background="#ecf0f1"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/text_i_am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:text="I am "
+        android:textColor="#95a5a6"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/text_poor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_toEndOf="@+id/text_i_am"
+        android:layout_toRightOf="@+id/text_i_am"
+        android:text="poor"
+        android:textColor="#95a5a6"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
     <ImageView
+        android:layout_marginTop="80dp"
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
         app:srcCompat="@drawable/poor" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="@string/title"
-        android:textColor="#FFFFFF"
-        android:textSize="48sp" />
 
 </RelativeLayout>
